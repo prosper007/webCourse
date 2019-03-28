@@ -89,6 +89,7 @@ app.put("/blogs/:id", function(req, res){
     })
 });
 
+//DELTE ROUTE
 app.delete("/blogs/:id", function(req, res){
     Blog.findByIdAndRemove(req.params.id, function(err){
         if(err){
